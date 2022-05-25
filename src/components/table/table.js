@@ -38,6 +38,7 @@ const Table = () => {
       <input
         type="search"
         name="search"
+        placeholder='Search'
         value={searchResult}
         onChange={(e) => {
           setSearchResult(e.target.value);
@@ -45,8 +46,9 @@ const Table = () => {
       />
       <br />
 
+        <h4>PAGINATION    : {page}</h4>
       <div>
-          PAGINATION    : 
+          
         <button
           onClick={() => {
             setPage(page + 5);
